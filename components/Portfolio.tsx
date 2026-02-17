@@ -1,7 +1,6 @@
-
 import React from 'react';
-import { Theme } from '../types.ts';
-import { SUCCESS_STORIES, PORTFOLIO_PROJECTS } from '../constants.tsx';
+import { Theme } from '../types';
+import { SUCCESS_STORIES, PORTFOLIO_PROJECTS } from '../constants';
 import { ArrowRight, ExternalLink } from 'lucide-react';
 
 interface PortfolioProps {

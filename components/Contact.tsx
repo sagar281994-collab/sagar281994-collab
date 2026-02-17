@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { Theme } from '../types.ts';
+import { Theme } from '../types';
 import { Mail, Linkedin, Phone, MapPin, Send } from 'lucide-react';
 
 interface ContactProps { theme: Theme; }

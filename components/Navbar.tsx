@@ -1,7 +1,6 @@
-
 import React, { useState, useEffect } from 'react';
 import { Moon, Sun, Menu, X } from 'lucide-react';
-import { Theme } from '../types.ts';
+import { Theme } from '../types';
 
 interface NavbarProps {
   theme: Theme;

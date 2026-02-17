@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { 
   Brain, 
@@ -13,7 +12,7 @@ import {
   Database,
   BarChart3
 } from 'lucide-react';
-import { SuccessStory, PortfolioProject } from './types.ts';
+import { SuccessStory, PortfolioProject } from './types';
 
 export const SUCCESS_STORIES: SuccessStory[] = [
   {

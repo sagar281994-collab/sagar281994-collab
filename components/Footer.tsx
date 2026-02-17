@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { Theme } from '../types.ts';
+import { Theme } from '../types';
 
 interface FooterProps { theme: Theme; }
 

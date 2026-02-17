@@ -1,7 +1,6 @@
-
 import React from 'react';
-import { Theme } from '../types.ts';
-import { APPROACH_STEPS } from '../constants.tsx';
+import { Theme } from '../types';
+import { APPROACH_STEPS } from '../constants';
 
 interface ApproachProps {
   theme: Theme;

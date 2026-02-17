@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { Theme } from '../types.ts';
+import { Theme } from '../types';
 import { Quote } from 'lucide-react';
 
 interface AboutProps {
