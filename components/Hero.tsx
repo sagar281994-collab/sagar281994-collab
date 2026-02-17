@@ -8,9 +8,6 @@ interface HeroProps {
 
 const Hero: React.FC<HeroProps> = ({ theme }) => {
   const isDark = theme === 'dark';
-  const headshotUrl = "https://raw.githubusercontent.com/StackBlitz/stackblitz-images/main/recruiter-headshot.jpg"; // Placeholder path, assuming local or standard asset. 
-  // For the purpose of this output, I will use a high-quality placeholder that matches the aesthetic.
-  const actualHeadshot = "https://picsum.photos/seed/recruiter/600/600"; // Fallback placeholder
 
   return (
     <section id="home" className="relative min-h-screen flex items-center pt-20 overflow-hidden">
@@ -61,15 +58,12 @@ const Hero: React.FC<HeroProps> = ({ theme }) => {
         <div className="relative group animate-in fade-in slide-in-from-right duration-1000">
           <div className={`absolute -inset-4 rounded-3xl blur-2xl opacity-20 transition-opacity group-hover:opacity-30 ${isDark ? "bg-teal-500" : "bg-blue-500"}`}></div>
           <div className={`relative aspect-[4/5] rounded-3xl overflow-hidden border-4 ${isDark ? "border-white/10" : "border-white shadow-2xl"}`}>
-            {/* The user provided a real image, we would typically path to it. 
-                Using a high-quality placeholder to mimic the user image's vibe. */}
             <img 
               src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=800" 
               alt="Al-Muhaiminul Islam" 
               className="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-500"
             />
           </div>
-          {/* Stats Overlay */}
           <div className={`absolute -bottom-6 -left-6 p-6 rounded-2xl shadow-2xl transform transition-transform group-hover:-translate-y-2 ${isDark ? "bg-[#1d1d1f] border border-white/10" : "bg-white border border-gray-100"}`}>
             <div className={`text-3xl font-bold ${isDark ? "text-teal-400" : "text-blue-600"}`}>500+</div>
             <div className="text-xs font-bold opacity-60 uppercase tracking-widest">Networked Experts</div>

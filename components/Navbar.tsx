@@ -5,10 +5,9 @@ import { Theme } from '../types.ts';
 
 interface NavbarProps {
   theme: Theme;
-  toggleTheme: () => void;
 }
 
-const Navbar: React.FC<NavbarProps> = ({ theme, toggleTheme }) => {
+const Navbar: React.FC<NavbarProps & { toggleTheme: () => void }> = ({ theme, toggleTheme }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
