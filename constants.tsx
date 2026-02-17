@@ -13,7 +13,7 @@ import {
   Database,
   BarChart3
 } from 'lucide-react';
-import { SuccessStory, PortfolioProject } from './types';
+import { SuccessStory, PortfolioProject } from './types.ts';
 
 export const SUCCESS_STORIES: SuccessStory[] = [
   {
